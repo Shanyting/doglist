@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doglist</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  </head>
+  <body>
+    <div id="title-section">
+      <p id="doglist-title"><b>DOGLIST</b></p>
+      <a href="/dogs/new" id="add-new-dog">Add New Dog</a>
+    </div>
+    <br>
+    <br>
+    <section id="container">
+      {{#each dogs}}
+        <a href="/dogs/{{id}}">
+          <section class="dog-container">
+            <div id="dog-name">
+              <h1>{{name}}</h1>
+            </div>
+            <div id="dog-image">
+              <img src={{image}}>
+            </div>
+          </section>
+        </a>
+      {{/each}}
+    </section>
+  </body>
+</html>

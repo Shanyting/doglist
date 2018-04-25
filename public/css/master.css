@@ -1,0 +1,125 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #F5EEF8;
+  font-size: 20px;
+}
+
+#dog-title, .form-title {
+  text-align: center;
+	font-size: 45px;
+}
+
+#dog-content {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  font-size: 17px;
+}
+
+
+.home-button {
+  margin: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: plum;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.home-button:hover {
+  background-color: violet;
+  transition: 0.3s;
+}
+
+.bottom-buttons {
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  background-color: plum;
+  margin-top: 15px;
+  border: plum;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bottom-buttons:hover {
+  background-color: violet;
+  transition: 0.3s;
+}
+
+#title-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  margin: 5px 20px 0px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#doglist-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 50px;
+  margin: 30px 0px 0px 100px;
+  cursor: default;
+}
+
+.dog-info {
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+#add-new-dog {
+  margin: 30px 0px 10px 0px;
+  padding: 10px;
+  color: lightyellow;
+  display: flex;
+  font-size: 25px;
+  background-color: royalblue;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+#add-new-dog:hover {
+  background-color: #21618C;
+  transition: 0.3s;
+}
+
+#dog-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.dog-container {
+  background-color: papayawhip;
+  color: black;
+  text-align: center;
+  border: black 1px;
+  box-shadow: 3px 3px 1px 1px rgba(160, 160, 160, 0.2);
+  margin: 23px;
+  margin-left: 45px;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 25% 75%;
+}

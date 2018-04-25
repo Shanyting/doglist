@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dog {{dog.name}}</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  </head>
+  <body>
+    <a href="../dogs">
+      <button class="home-button" type="button" name="button">Home</button>
+    </a>
+    <br><img style="width:400px;" src="{{dog.image}}" alt="No picture provided">
+    <section id="dog-title">
+			<p>{{dog.name}}</p>
+		</section>
+    <section id="dog-content">
+      <div class="dog-info">
+        <p><b>Age:</b> {{dog.age}}</p>
+        <p><b>Description:</b> {{dog.description}}</p>
+      </div>
+
+      <div>
+        <form action="/dogs/{{dog.id}}/edit" method="get">
+          <input class="bottom-buttons" type="submit" name="update" value="Update">
+        </form>
+        <form action="/dogs/{{dog.id}}?_method=DELETE" method="post">
+          <input class="bottom-buttons" type="submit" name="delete" value="Delete">
+        </form>
+      </div>
+    </section>
+    <br><br><br><br><br>
+  </body>
+</html>

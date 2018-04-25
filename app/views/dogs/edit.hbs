@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Update Dog</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  </head>
+  <body>
+    <a href="/dogs/">
+      <button class="home-button" type="button" name="button">Home</button>
+    </a><br>
+    <img style="width:400px;" src="{{dog.image}}" alt="No picture provided">
+    <section>
+      <div class="form-title">
+        <p>Update Dog</p>
+      </div>
+      <div>
+        <form action="/dogs/{{dog.id}}/edit?_method=PATCH" method="post">
+          {{>form}}
+          <input class="bottom-buttons" type="submit" value="Submit">
+        </form>
+        <a href="/dogs/{{dog.id}}">
+          <button class="bottom-buttons" type="button" name="button">Cancel</button>
+        </a>
+      </div>
+    </section>
+    <br><br><br><br><br>
+  </body>
+</html>

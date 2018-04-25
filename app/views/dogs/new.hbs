@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+    <title>Add New Dog</title>
+    </style>
+  </head>
+  <body>
+    <a href="../dogs">
+      <button class="home-button" type="button" name="button">Home</button>
+    </a>
+    <section>
+      <div class="form-title">
+        <p>Add New Dog</p>
+      </div>
+      <div>
+        <form action="/dogs" method="post">
+          {{>form}}
+          <input class="bottom-buttons" type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
